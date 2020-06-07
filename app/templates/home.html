@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+</br></br>
+<h5>Task starten:</h5>
+
+<a class="button" href="{% url 'StartTask' 1 %}">Start Task 1</a>
+<a class="button" href="{% url 'StartTask' 2 %}">Start Task 2</a>
+<a class="button" href="{% url 'StartTask' 3 %}">Start Task 3</a>
+
+</br></br></br>
+
+<a class="button" href="{% url 'TaskStatus' %}">View Tasks</a>
+
+{% endblock %}

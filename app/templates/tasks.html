@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+</br></br>
+<h5>Aktuelle Tasks:</h5>
+</br>
+
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Zeitpunkt</th>
+        <th>Parameter</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for task in running_tasks %}
+        <tr>
+        <td> {{task.task_name}}</td>
+        <td> {{task.run_at}}</td>
+        <td> {{task.task_params}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</br></br>
+
+<a class="button" href="{% url 'home' %}">Home</a>
+
+</br></br></br>
+<h5>Ausgeführte Tasks:</h5>
+</br>
+
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Zeitpunkt</th>
+        <th>Parameter</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for task in completed_tasks %}
+        <tr>
+        <td> {{task.task_name}}</td>
+        <td> {{task.run_at}}</td>
+        <td> {{task.task_params}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+Here are the static files for the website styling --> Skeleton CSS & the images folder at the moment only for the favicon.

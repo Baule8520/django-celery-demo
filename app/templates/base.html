@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>BTM</title>
+  <meta name="description" content="Background Task Management">
+  <meta name="author" content="Paul Z.">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS last one loaded will overwrite the others...!
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/skeleton.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+
+</br><h2>Background Task Management</h2>
+</br>
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  background: #f2f1f3;
+}
+
+.container {
+  background: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 25px;
+  height: 90%;
+  border-radius: 5px;
+}
+
+.center {
+  display:flex;
+  justify-content:center;  
+}

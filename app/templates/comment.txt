@@ -1,0 +1,3 @@
+base.html is the standard styling of the webpage and imports the css out of the static files.
+
+home.html and tasks.html are then extensions of the base.html, thereby the code of the webpages is smaller and less repitive.

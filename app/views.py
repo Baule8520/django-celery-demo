@@ -1,7 +1,6 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, HttpResponse
 
-from .tasks import sleepy
+from .tasks import sleepy # Imports the background task function
 
 # Create your views here.
 

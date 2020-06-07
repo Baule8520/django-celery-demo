@@ -119,6 +119,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join('static'),) # For Windows this line has to be added to use static folder
+
+# Here the Broker for Celery has to be set, in this case from redis used Heroku:
 
 CELERY_BROKER_URL = 'redis://h:p9d457bc97ed95211d7b6899502adec4b84fc088e8782eabc51ab01cd11b2dec9@ec2-99-81-85-138.eu-west-1.compute.amazonaws.com:8189'
 CELERY_ACCEPT_CONTENT = ['json']
